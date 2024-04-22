@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>gulp-scss-starter</title>
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+        
+        <link rel="preload" href="./fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="./fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="./fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <header class="header">
+    <div class="container">
+        <div class="header__wrap">
+            <a href="#" class="header__logo">
+                <picture>
+                    <img src="./img/svg/logo.svg" alt="">
+                </picture>
+            </a>
+
+            <div class="header__contacts">
+                <div class="header__address">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#pin_icon"></use>
+                    </svg>
+                    <div class="header__address-text">Санкт-Петербург, ул. Коммуны, стр. 16 </div>
+                </div>
+                <button class="header__btn btn btn_black"  data-fancybox data-src="#modal-message">Записаться 
+                    <span>на тест-драйв</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <section class="intro">
+    <!--<div class="intro__img">
+        <picture>
+            <source srcset="./img/content/intro/intro_banner01.jpg" type="image/jpg">
+            <img src="./img/content/intro/intro_banner01.jpg" alt="" loading="lazy">
+        </picture>
+    </div>-->
+    <div class="intro__content">
+        <div class="container">
+            <h1 class="intro__title title-lg">Лучшее предложение <br> этого лета</h1>
+            <button class="intro__btn btn btn_white"  data-fancybox data-src="#modal-message">Получить предложение</button>
+        </div>
+    </div>
+</section>
+
+    <div class="brands">
+    <div class="container">
+        <div class="brands__wrap js-brands-slider">
+            <div class="brands__item">
+    <div class="brands__img">
+        <img src="./img/content/logos/1.png" alt="" width="168" height="80">
+    </div>
+    <div class="brands__name text-md">
+        Chery
+    </div>
+    <p class="brands__text text-sm">
+        от 2 029 000 руб
+    </p>
+</div><div class="brands__item">
+    <div class="brands__img">
+        <img src="./img/content/logos/2.png" alt="" width="168" height="80">
+    </div>
+    <div class="brands__name text-md">
+        Datsun
+    </div>
+    <p class="brands__text text-sm">
+        от 2 029 000 руб
+    </p>
+</div><div class="brands__item">
+    <div class="brands__img">
+        <img src="./img/content/logos/3.png" alt="" width="168" height="80">
+    </div>
+    <div class="brands__name text-md">
+        Geely
+    </div>
+    <p class="brands__text text-sm">
+        от 2 029 000 руб
+    </p>
+</div><div class="brands__item">
+    <div class="brands__img">
+        <img src="./img/content/logos/4.png" alt="" width="168" height="80">
+    </div>
+    <div class="brands__name text-md">
+        Haval
+    </div>
+    <p class="brands__text text-sm">
+        от 2 029 000 руб
+    </p>
+</div><div class="brands__item">
+    <div class="brands__img">
+        <img src="./img/content/logos/5.png" alt="" width="168" height="80">
+    </div>
+    <div class="brands__name text-md">
+        Hyuindai
+    </div>
+    <p class="brands__text text-sm">
+        от 2 029 000 руб
+    </p>
+</div><div class="brands__item">
+    <div class="brands__img">
+        <img src="./img/content/logos/6.png" alt="" width="168" height="80">
+    </div>
+    <div class="brands__name text-md">
+        JAC
+    </div>
+    <p class="brands__text text-sm">
+        от 2 029 000 руб
+    </p>
+</div><div class="brands__item">
+    <div class="brands__img">
+        <img src="./img/content/logos/7.png" alt="" width="168" height="80">
+    </div>
+    <div class="brands__name text-md">
+        KIA
+    </div>
+    <p class="brands__text text-sm">
+        от 2 029 000 руб
+    </p>
+</div><div class="brands__item">
+    <div class="brands__img">
+        <img src="./img/content/logos/8.png" alt="" width="168" height="80">
+    </div>
+    <div class="brands__name text-md">
+        LADA
+    </div>
+    <p class="brands__text text-sm">
+        от 2 029 000 руб
+    </p>
+</div><div class="brands__item">
+    <div class="brands__img">
+        <img src="./img/content/logos/9.png" alt="" width="168" height="80">
+    </div>
+    <div class="brands__name text-md">
+        Lifan
+    </div>
+    <p class="brands__text text-sm">
+        от 2 029 000 руб
+    </p>
+</div><div class="brands__item">
+    <div class="brands__img">
+        <img src="./img/content/logos/10.png" alt="" width="168" height="80">
+    </div>
+    <div class="brands__name text-md">
+        Mazda
+    </div>
+    <p class="brands__text text-sm">
+        от 2 029 000 руб
+    </p>
+</div><div class="brands__item">
+    <div class="brands__img">
+        <img src="./img/content/logos/11.png" alt="" width="168" height="80">
+    </div>
+    <div class="brands__name text-md">
+        Mitsubishi
+    </div>
+    <p class="brands__text text-sm">
+        от 2 029 000 руб
+    </p>
+</div><div class="brands__item">
+    <div class="brands__img">
+        <img src="./img/content/logos/12.png" alt="" width="168" height="80">
+    </div>
+    <div class="brands__name text-md">
+        Nissan
+    </div>
+    <p class="brands__text text-sm">
+        от 2 029 000 руб
+    </p>
+</div><div class="brands__item">
+    <div class="brands__img">
+        <img src="./img/content/logos/13.png" alt="" width="168" height="80">
+    </div>
+    <div class="brands__name text-md">
+        Opel
+    </div>
+    <p class="brands__text text-sm">
+        от 2 029 000 руб
+    </p>
+</div><div class="brands__item">
+    <div class="brands__img">
+        <img src="./img/content/logos/14.png" alt="" width="168" height="80">
+    </div>
+    <div class="brands__name text-md">
+        Peugeot
+    </div>
+    <p class="brands__text text-sm">
+        от 2 029 000 руб
+    </p>
+</div><div class="brands__item">
+    <div class="brands__img">
+        <img src="./img/content/logos/15.png" alt="" width="168" height="80">
+    </div>
+    <div class="brands__name text-md">
+        Ravon
+    </div>
+    <p class="brands__text text-sm">
+        от 2 029 000 руб
+    </p>
+</div><div class="brands__item">
+    <div class="brands__img">
+        <img src="./img/content/logos/16.png" alt="" width="168" height="80">
+    </div>
+    <div class="brands__name text-md">
+        Renault
+    </div>
+    <p class="brands__text text-sm">
+        от 2 029 000 руб
+    </p>
+</div><div class="brands__item">
+    <div class="brands__img">
+        <img src="./img/content/logos/17.png" alt="" width="168" height="80">
+    </div>
+    <div class="brands__name text-md">
+        Skoda
+    </div>
+    <p class="brands__text text-sm">
+        от 2 029 000 руб
+    </p>
+</div><div class="brands__item">
+    <div class="brands__img">
+        <img src="./img/content/logos/18.png" alt="" width="168" height="80">
+    </div>
+    <div class="brands__name text-md">
+        Suzuki
+    </div>
+    <p class="brands__text text-sm">
+        от 2 029 000 руб
+    </p>
+</div><div class="brands__item">
+    <div class="brands__img">
+        <img src="./img/content/logos/19.png" alt="" width="168" height="80">
+    </div>
+    <div class="brands__name text-md">
+        Toyota
+    </div>
+    <p class="brands__text text-sm">
+        от 2 029 000 руб
+    </p>
+</div><div class="brands__item">
+    <div class="brands__img">
+        <img src="./img/content/logos/20.png" alt="" width="168" height="80">
+    </div>
+    <div class="brands__name text-md">
+        Volkswagen
+    </div>
+    <p class="brands__text text-sm">
+        от 2 029 000 руб
+    </p>
+</div><div class="brands__item">
+    <div class="brands__img">
+        <img src="./img/content/logos/21.png" alt="" width="168" height="80">
+    </div>
+    <div class="brands__name text-md">
+        Zotye
+    </div>
+    <p class="brands__text text-sm">
+        от 2 029 000 руб
+    </p>
+</div><div class="brands__item">
+    <div class="brands__img">
+        <img src="./img/content/logos/22.png" alt="" width="168" height="80">
+    </div>
+    <div class="brands__name text-md">
+        УАЗ
+    </div>
+    <p class="brands__text text-sm">
+        от 2 029 000 руб
+    </p>
+</div>
+        </div>
+    </div>
+</div>
+
+    <div class="model-card">
+    <div class="container">
+        <div class="model-card__wrap">
+            
+                <div class="model-card__item">
+    <div class="model-card__img">
+        <picture>
+            <source srcset="./img/content/car_img.jpg" type="image/jpg">
+            <img src="./img/content/car_img.jpg" alt="" loading="lazy">
+        </picture>
+    </div>
+    <span class="model-card__badge">Выгодно</span>
+    <div class="model-card__body">
+        <div class="model-card__name title-sm">EXEED</div>
+        <div class="model-card__body-wrap">
+            <div class="model-card__col">
+                <div class="model-card__col-top">
+                    <span class="model-card__text text-xsm">Бонус по trade-in</span>
+                    <span class="model-card__text text-lg">от 100 000 ₽</span>
+                </div>
+                <div class="model-card__col-bottom">
+                    <span class="model-card__text text-xsm">Новая цена</span>
+                    <span class="model-card__text title-sm">2 029 000 ₽</span>
+                </div>
+                
+            </div>
+            <div class="model-card__col">
+                <div class="model-card__col-top">
+                    <span class="model-card__text text-xsm">Кредит от</span>
+                    <span class="model-card__text text-lg">10%</span>
+                </div>
+                <div class="model-card__col-bottom">
+                    <span class="model-card__text text-xsm">Старая цена</span>
+                    <span class="model-card__text model-card__text-del text-sm">2 029 000 руб</span>
+                </div>
+            </div>
+        </div>
+        <button class="model-card__btn btn btn_black"  data-fancybox data-src="#modal-message">Получить цену</button>
+    </div>
+</div>
+            
+                <div class="model-card__item">
+    <div class="model-card__img">
+        <picture>
+            <source srcset="./img/content/car_img.jpg" type="image/jpg">
+            <img src="./img/content/car_img.jpg" alt="" loading="lazy">
+        </picture>
+    </div>
+    <span class="model-card__badge">Выгодно</span>
+    <div class="model-card__body">
+        <div class="model-card__name title-sm">EXEED</div>
+        <div class="model-card__body-wrap">
+            <div class="model-card__col">
+                <div class="model-card__col-top">
+                    <span class="model-card__text text-xsm">Бонус по trade-in</span>
+                    <span class="model-card__text text-lg">от 100 000 ₽</span>
+                </div>
+                <div class="model-card__col-bottom">
+                    <span class="model-card__text text-xsm">Новая цена</span>
+                    <span class="model-card__text title-sm">2 029 000 ₽</span>
+                </div>
+                
+            </div>
+            <div class="model-card__col">
+                <div class="model-card__col-top">
+                    <span class="model-card__text text-xsm">Кредит от</span>
+                    <span class="model-card__text text-lg">10%</span>
+                </div>
+                <div class="model-card__col-bottom">
+                    <span class="model-card__text text-xsm">Старая цена</span>
+                    <span class="model-card__text model-card__text-del text-sm">2 029 000 руб</span>
+                </div>
+            </div>
+        </div>
+        <button class="model-card__btn btn btn_black"  data-fancybox data-src="#modal-message">Получить цену</button>
+    </div>
+</div>
+            
+                <div class="model-card__item">
+    <div class="model-card__img">
+        <picture>
+            <source srcset="./img/content/car_img.jpg" type="image/jpg">
+            <img src="./img/content/car_img.jpg" alt="" loading="lazy">
+        </picture>
+    </div>
+    <span class="model-card__badge">Выгодно</span>
+    <div class="model-card__body">
+        <div class="model-card__name title-sm">EXEED</div>
+        <div class="model-card__body-wrap">
+            <div class="model-card__col">
+                <div class="model-card__col-top">
+                    <span class="model-card__text text-xsm">Бонус по trade-in</span>
+                    <span class="model-card__text text-lg">от 100 000 ₽</span>
+                </div>
+                <div class="model-card__col-bottom">
+                    <span class="model-card__text text-xsm">Новая цена</span>
+                    <span class="model-card__text title-sm">2 029 000 ₽</span>
+                </div>
+                
+            </div>
+            <div class="model-card__col">
+                <div class="model-card__col-top">
+                    <span class="model-card__text text-xsm">Кредит от</span>
+                    <span class="model-card__text text-lg">10%</span>
+                </div>
+                <div class="model-card__col-bottom">
+                    <span class="model-card__text text-xsm">Старая цена</span>
+                    <span class="model-card__text model-card__text-del text-sm">2 029 000 руб</span>
+                </div>
+            </div>
+        </div>
+        <button class="model-card__btn btn btn_black"  data-fancybox data-src="#modal-message">Получить цену</button>
+    </div>
+</div>
+            
+                <div class="model-card__item">
+    <div class="model-card__img">
+        <picture>
+            <source srcset="./img/content/car_img.jpg" type="image/jpg">
+            <img src="./img/content/car_img.jpg" alt="" loading="lazy">
+        </picture>
+    </div>
+    <span class="model-card__badge">Выгодно</span>
+    <div class="model-card__body">
+        <div class="model-card__name title-sm">EXEED</div>
+        <div class="model-card__body-wrap">
+            <div class="model-card__col">
+                <div class="model-card__col-top">
+                    <span class="model-card__text text-xsm">Бонус по trade-in</span>
+                    <span class="model-card__text text-lg">от 100 000 ₽</span>
+                </div>
+                <div class="model-card__col-bottom">
+                    <span class="model-card__text text-xsm">Новая цена</span>
+                    <span class="model-card__text title-sm">2 029 000 ₽</span>
+                </div>
+                
+            </div>
+            <div class="model-card__col">
+                <div class="model-card__col-top">
+                    <span class="model-card__text text-xsm">Кредит от</span>
+                    <span class="model-card__text text-lg">10%</span>
+                </div>
+                <div class="model-card__col-bottom">
+                    <span class="model-card__text text-xsm">Старая цена</span>
+                    <span class="model-card__text model-card__text-del text-sm">2 029 000 руб</span>
+                </div>
+            </div>
+        </div>
+        <button class="model-card__btn btn btn_black"  data-fancybox data-src="#modal-message">Получить цену</button>
+    </div>
+</div>
+            
+        </div>
+    </div>
+</div>
+
+    <div class="model">
+    <div class="model__wrap">
+        <div class="model__img">
+            <picture>
+                <source srcset="./img/content/model/img_1.png">
+                <img src="./img/content/model/img_1.png" alt="" loading="lazy">
+            </picture>
+        </div>
+        <div class="model__content">
+            <div class="model__suptitle text-md">Забронируйте автомобиль первым</div>
+            <div class="model__title title-md">Не можете определиться с моделью автомобиля?</div>
+            <p class="model__text text-md">
+                Возможноно, нужный вам автомобиль уже стоит на поставке и скоро будет в наличии. 
+                Забронируйте его первым
+            </p>
+            <button class="model__btn btn btn_black" data-fancybox data-src="#modal-message">Оставить заявку на подбор</button>
+        </div>
+    </div>
+</div>
+
+    <div class="cars">
+    <div class="cars__content">
+        <div class="container">
+            <div class="cars__wrap">
+                <div class="cars__title title-md">В наличии более <br> 200 новых автомобилей</div>
+                <p class="cars__text text-md">
+                    Позвоните нам или оставьте заявку на подбор автомобиля <br> и мы вам перезвоним в ближайшее время
+                </p>
+                <div class="cars__phone text-md">
+                    <span class="cars__phone-text">Подробнее:</span>
+                    <a href="tel:+79990000000" class="cars__phone-link  text-lg">+ 7 (999) 00 00 000</a>
+                </div>
+                <form action="" class="cars__form">
+                    <div class="cars__form-row">
+                        <input class="cars__form-input js-input-phone" required type="tel" placeholder="+ 7 (___) ___ - __ - __" id="phone" name="phone">
+                        <button class="cars__form-btn btn btn_black">Оставить заявку</button>
+                    </div>
+                    <span class="cars__form-text text-xsm">
+                        Нажимая на кнопку я соглашаюсь  на обработку  <a href="" target="_blank"> Персональных данных</a>
+                    </span>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <section class="exchange">
+    <div class="container">
+        <div class="exchange__wrap">
+            <div class="exchange__left">
+                <h2 class="exchange__title title-md">Обменяем ваш автомобиль на новый!</h2>
+                <div class="exchange__subtitle">Без доплаты за 1 день</div>
+                <div class="exchange__img">
+                    <picture>
+                        <source srcset="./img/content/exchange/car_1.png" type="image/png">
+                        <img src="./img/content/exchange/car_1.png" alt="" loading="lazy">
+                    </picture>
+                </div>
+                <div class="exchange__icon">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#exchange_icon"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="exchange__right">
+                <div class="exchange__content">
+                    <div class="exchange__item">
+                        <span class="exchange__number text-md">1</span>
+                        <div class="exchange__desc">
+                            <div class="exchange__desc-title text-md">Вы приезжаете к нам по адресу:</div>
+                            <div class="exchange__desc-text text-sm">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#pin_icon"></use>
+                                </svg>
+                                <span>г. Санкт-Петербург, ул. Коммуны,  д. 16</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exchange__item">
+                        <span class="exchange__number text-md">2</span>
+                        <div class="exchange__desc">
+                            <div class="exchange__desc-title text-md">Выбираете автомобиль</div>
+                            <p class="exchange__desc-text text-sm">
+                                один из 200 автомобилей
+                            </p>
+                        </div>
+                    </div>
+                    <div class="exchange__item">
+                        <span class="exchange__number text-md">3</span>
+                        <div class="exchange__desc">
+                            <div class="exchange__desc-title text-md">Мы оцениваем ваш автомобиль</div>
+                            <p class="exchange__desc-text text-sm">
+                                и принимаем его в trade-in
+                            </p>
+                        </div>
+                    </div>
+                    <div class="exchange__item">
+                        <span class="exchange__number text-md">4</span>
+                        <div class="exchange__desc">
+                            <div class="exchange__desc-title text-md">Мы оформляем документы</div>
+                            <p class="exchange__desc-text text-sm">
+                                На новый авто
+                            </p>
+                        </div>
+                    </div>
+                    <div class="exchange__item">
+                        <span class="exchange__number text-md">5</span>
+                        <div class="exchange__desc">
+                            <div class="exchange__desc-title text-md">Вы становитесь владельцем <br> нового автомобиля!</div>
+                        </div>
+                    </div>
+                    <button class="exchange__btn btn btn_black"  data-fancybox data-src="#modal-message">Отправить заявку</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+    <section class="benefits">
+    <div class="container">
+        <h2 class="benefits__title title-md">преимущества дилерского центра atlanta</h2>
+        <div class="benefits__wrap">
+            <div class="benefits__item">
+    <div class="benefits__item-icon">
+        <img src="./img/content/benefits/1.svg" alt="">
+    </div>
+    <div class="benefits__item-title text-lg">
+        Более 200 автомобилей
+    </div>
+    <p class="benefits__item-text text-sm">
+        В наличии с ПТС
+    </p>
+</div><div class="benefits__item">
+    <div class="benefits__item-icon">
+        <img src="./img/content/benefits/2.svg" alt="">
+    </div>
+    <div class="benefits__item-title text-lg">
+        Скидка -10%
+    </div>
+    <p class="benefits__item-text text-sm">
+        На первый/семейный автомобиль
+    </p>
+</div><div class="benefits__item">
+    <div class="benefits__item-icon">
+        <img src="./img/content/benefits/3.svg" alt="">
+    </div>
+    <div class="benefits__item-title text-lg">
+        Обмен вашего автомобиля
+    </div>
+    <p class="benefits__item-text text-sm">
+        День в день
+    </p>
+</div><div class="benefits__item">
+    <div class="benefits__item-icon">
+        <img src="./img/content/benefits/4.svg" alt="">
+    </div>
+    <div class="benefits__item-title text-lg">
+        Привлекательные программы 
+    </div>
+    <p class="benefits__item-text text-sm">
+        Для постоянных клиентов
+    </p>
+</div><div class="benefits__item">
+    <div class="benefits__item-icon">
+        <img src="./img/content/benefits/5.svg" alt="">
+    </div>
+    <div class="benefits__item-title text-lg">
+        Дополнительные услуги
+    </div>
+    <p class="benefits__item-text text-sm">
+        Широкий спектр
+    </p>
+</div><div class="benefits__item">
+    <div class="benefits__item-icon">
+        <img src="./img/content/benefits/6.svg" alt="">
+    </div>
+    <div class="benefits__item-title text-lg">
+        Лучшие специалисты
+    </div>
+    <p class="benefits__item-text text-sm">
+        Все имеют сертификаты
+    </p>
+</div><div class="benefits__item">
+    <div class="benefits__item-icon">
+        <img src="./img/content/benefits/7.svg" alt="">
+    </div>
+    <div class="benefits__item-title text-lg">
+        Страховка
+    </div>
+    <p class="benefits__item-text text-sm">
+        Оформление в день покупки
+    </p>
+</div><div class="benefits__item">
+    <div class="benefits__item-icon">
+        <img src="./img/content/benefits/8.svg" alt="">
+    </div>
+    <div class="benefits__item-title text-lg">
+        Кредит
+    </div>
+    <p class="benefits__item-text text-sm">
+        Самые лучшие условия
+    </p>
+</div>
+        </div>
+    </div>
+</section>
+
+    <div class="modal">
+    <div class="modal__container" id="modal-message">
+        <div class="modal__box">
+            <div class="modal__wrap">
+                <div class="modal__title">Заказать звонок</div>
+                <p class="modal__text">
+                    Оставьте заявку на подбор автомобиля и мы вам перезвоним
+                </p>
+
+                <form action="" class="modal__form">
+                    <div class="modal__form-row">
+                        <input class="modal__form-input js-input-phone" type="tel" placeholder="+ 7 (___) ___ - __ - __" id="phone" name="phone" required>
+                        <button class="modal__form-btn btn btn_black">Оставить заявку</button>
+                    </div>
+                    <span class="modal__form-text">
+                        Нажимая на кнопку я соглашаюсь  на обработку  <a href="" target="_blank"> Персональных данных</a>
+                    </span>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__wrap">
+            <a href="" class="footer__logo">
+                <picture>
+                    <img src="./img/svg/logo.svg" alt="">
+                </picture>
+            </a>
+            <div class="footer__contacts">
+                <div class="footer__contacts-item">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#phone_icon"></use>
+                    </svg>
+                    <a href="tel:+7 (999)-000-00-00" class="footer__contacts-text">+7 (999)-000-00-00</a>
+                </div>
+                <div class="footer__contacts-item">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#pin_icon"></use>
+                    </svg>
+                    <div class="footer__contacts-text">Санкт-Петербург, ул. Коммуны, стр. 16 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        <script>
+    let isLoadSources = false;
+    const touch = isTouchDevice()
+    window.addEventListener('scroll', userEventsInit);
+    if (!touch) {
+        window.addEventListener("mousemove", userEventsInit)
+    }else {
+        window.addEventListener("touchstart", userEventsInit)
+    }
+
+    function isTouchDevice() {
+        return (('ontouchstart' in window) ||
+            (navigator.maxTouchPoints > 0) ||
+            (navigator.msMaxTouchPoints > 0));
+    }
+
+    function userEventsInit() {
+        window.removeEventListener("mousemove", userEventsInit);
+        window.removeEventListener("touchstart", userEventsInit);
+        window.removeEventListener('scroll', userEventsInit);
+
+        loadStyles("./libs/slick-1.8.1/slick.css")
+            .then(link => loadStyles("./libs/slick-1.8.1/slick.css"))
+            .then(link => loadStyles("./libs/slick-1.8.1/slick-theme.css"))
+            .then(link => loadStyles("https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"))
+           
+        loadScript("./libs/jquery-3.5.1.min.js")
+            .then(script => loadScript("./libs/jquery.inputmask.min.js"))
+            .then(script => loadScript("./libs/slick-1.8.1/slick.min.js"))
+            .then(script => loadScript("https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"))
+            .then(script => loadScript("js/main.js"))
+            .then(script => isLoadSources = true )
+    }
+
+    function loadStyles(href) {
+        return new Promise(function(resolve, reject) {
+            let link = document.createElement('link');
+            link.href = href;
+            link.rel = "stylesheet"
+            link.type = "text/css"
+            link.onload = () => resolve(link);
+            link.onerror = () => reject(new Error(`Ошибка загрузки скрипта ${src}`));
+
+            document.head.append(link);
+        });
+    }
+
+    
+    function loadScript(src) {
+        return new Promise(function(resolve, reject) {
+            let script = document.createElement('script');
+            script.src = src;
+
+            script.onload = () => resolve(script);
+            script.onerror = () => reject(new Error(`Ошибка загрузки скрипта ${src}`));
+
+            document.head.append(script);
+        });
+    }
+
+</script>
+    </body>
+</html>
